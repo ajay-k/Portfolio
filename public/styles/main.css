@@ -1,3 +1,6 @@
+.container-fluid{
+  background-color: #F7F7F2;
+}
 
 .firstDiv{
   display: flex;
@@ -5,7 +8,135 @@
   align-items: center;
   /* border: 2px solid red; */
   /* background-color: #FCBF49; */
+  height: 95vh;
+  color: white;
+  /* background-image: url("http://aaronjp.com/img/fast.gif"); */
+  /* background-image: url(../images/plane_compress.gif); */
+  background-size:100% 100%;
+  background-color: #F7F7F2;
+
+  /* background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%); */
+  background-image: linear-gradient(to right bottom, rgba(30, 115, 172, 0.7), rgba(142, 57, 153, 0.6)), url(../images/plane.gif);
+  background-size: cover;
+  background-position: top;
+  /* clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%); */
+  /* clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%); */
+  border-radius: .5%;
+  /* background: linear-gradient(135deg, transparent 30px, #333 0); */
+
+  /* mix-blend-mode: multiply;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20% */
+  /* border-top-left-radius: 5%; */
+  clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0);
+  /* overflow: hidden; */
+  /* clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%) */
+  /* position:absolute; */
+
+  
+}
+
+.secondDiv{
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  /* border: 2px solid #495867;
+  background-color: #F5F5F5;
   height: 650px;
+  color: black;
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%); */
+  /* border-bottom-right-radius: 20%;
+  border-top-left-radius: 20% */
+  /* clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%); */
+  /* clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%); */
+  height: 95vh;
+  clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0);
+  background-color: #F7F7F2;
+
+}
+
+.section-title{
+  /* display: flex; */
+  /* flex-direction: row;
+  justify-content: center; */
+  /* border: 2px red solid; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* justify-content: center;
+  text-align: center; */ 
+  color: rgb(142, 57, 153, 0.6);
+}
+
+.skills-container{
+  display: flex;
+  /* border: 2px red solid; */
+  height: 95vh;
+  justify-content: space-around;
+  align-items: center;
+
+  color: white;
+}
+
+.tech{
+  width: 35vh;
+  /* height: 100px; */
+  /* border-bottom: 3px black solid; */
+  /* border: 3px gray solid; */
+  height: 50vh;
+  background-color:rgb(142, 57, 153, 0.6);
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 2px gray;
+
+
+}
+.item-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: center; */
+  /* display: inline; */
+  /* height: 100px; */
+  /* border-bottom: 3px black solid; */
+  /* width: 35vh;
+  border: 2px green solid;
+  height: 50vh;
+  background-color:rgb(142, 57, 153, 0.6); */
+  /* display: table-column */
+  vertical-align: middle;
+  /* left: 50%; */
+  padding-left: 6vw;
+  /* padding-left: 50%; */
+  /* border: white 5px solid; */
+
+}
+
+.tech-title{
+  color: #F7F7F2;
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: center; */
+  /* align-items: center; */
+  width: 35vh;
+  /* border: 2px palegreen solid; */
+  text-align: center;
+}
+
+
+/* svg{
+  height: 300px;
+  width: 200px;
+  background: transparent;
+  background-color: goldenrod;
+  fill: rgb(0,94,184);
+} */
+.thirdDiv{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* border: 2px solid red; */
+  /* background-color: #FCBF49; */
+  height: 95vh;
+
   color: white;
   /* background-image: url("http://aaronjp.com/img/fast.gif");
   background-size:100% 100%;
@@ -14,8 +145,7 @@
   background-image: linear-gradient(to right bottom, rgba(30, 115, 172, 0.7), rgba(142, 57, 153, 0.6)), url(../images/plane_view.gif);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
-  border-radius: .5%;
+  /* clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%); */
   /* background: linear-gradient(135deg, transparent 30px, #333 0); */
     
 
@@ -23,39 +153,93 @@
   border-bottom-left-radius: 20%;
   border-top-right-radius: 20% */
   /* border-top-left-radius: 5%; */
-
+  /* clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%); */
+  clip-path: polygon(0 8%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0);
 
 }
 
-.secondDiv{
+.projects-title{
   display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.project-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.habit-card{
+  /* border: 2px solid red; */
+  width: 25vw;
+  height: 35vh;
+  background-color: white;
+  background-image: linear-gradient(to right bottom, rgba(172, 163, 30, 0.7), rgba(255, 87, 9, 0.6)), url(https://images.unsplash.com/photo-1580227974546-fbd48825d991?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+  background-size: cover;
+  background-position: 35% 55%;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  color: purple;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.park-card{
+  /* border: 2px solid red; */
+  width: 25vw;
+  height: 35vh;
+  background-color: green;
+  /* radial-gradient(circle, red, yellow, green); */
+  /* background-image: url("https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"); */
+  /* background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7), rgba(17, 145, 0, 0.863)), url(https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80); */
+  background-image: linear-gradient(to right bottom, rgba(30, 172, 65, 0.7), rgba(10, 116, 0, 0.6)), url(https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  opacity: 10;
+  color: purple;
+  font-size: 20px;
+  text-align: center;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.habit-title{
+    display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #EEEEFF;
-  background-color: #495867;
-  height: 650px;
+  height: 100%;
   color: white;
-  clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
-  /* border-bottom-right-radius: 20%;
-  border-top-left-radius: 20% */
 }
 
-.thirdDiv{
+.parkadvisor-title{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  color: white;
+
+}
+
+.fourthDiv{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   /* border: 2px solid red; */
   /* background-color: #FCBF49; */
-  height: 650px;
-  color: white;
+  height: 95vh;
+
+  color: black;
   /* background-image: url("http://aaronjp.com/img/fast.gif");
   background-size:100% 100%;
-  background-color: #f8ceec; */
+   */
   /* background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%); */
-  background-color: #1E73AC;
+  background-color: #F7F7F2;
   background-size: cover;
   background-position: top;
-  clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+  /* clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%); */
   /* background: linear-gradient(135deg, transparent 30px, #333 0); */
     
 
@@ -63,8 +247,7 @@
   border-bottom-left-radius: 20%;
   border-top-right-radius: 20% */
   /* border-top-left-radius: 5%; */
-
+  /* clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%); */
+  clip-path: polygon(0 8%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0);
 
 }
-
-

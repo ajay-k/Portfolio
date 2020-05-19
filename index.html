@@ -3,12 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c4410df193.js" crossorigin="anonymous"></script>
   <!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+   
   <link rel="stylesheet" href="public/styles/main.css">
   <title>Ajay's Portfolio</title>
 </head>
@@ -38,15 +41,57 @@
     </nav>
   </header>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="col-md-12 firstDiv">
       <h1>Hello I'm Ajay</h1>
     </div>
     <div class="col-md-12 secondDiv">
-      <h1>Skills</h1>
+      <h1 class="section-title">Skills</h1>
+      <div class="skills-container">
+        <div class="front-end tech">
+          <h1 class="tech-title">Front End</h1>
+          <div class="front-end-items item-container">
+            <span class="tech-item"><img src="public/images/icons8-html-5.svg"/> HTML 5 </span>
+            <span><img src="public/images/icons8-css3.svg"/> CSS </span>
+            <span><img src="public/images/icons8-javascript.svg"/> Javascript</span>
+            <span><img src="public/images/icons8-django.svg"/> Django </span>
+          </div>
+        </div>
+        <div class="server tech">
+          <h1 class="tech-title">Server</h1>
+          <div class="server-items item-container">
+            <span><img src="public/images/icons8-nodejs.svg"/> NodeJS </span>
+            <span><img src="public/images/icons8-css3.svg"/> Express </span>
+            <span><img src="public/images/icons8-django.svg"/> Django </span>
+          </div>
+        </div>
+        
+        <div class="database tech">
+          <h1 class="tech-title">Database</h1>
+          <div class="server-items item-container">
+            <span><img src="public/images/icons8-nodejs.svg"/> NodeJS </span>
+            <span><img src="public/images/icons8-css3.svg"/> Express </span>
+            <span><img src="public/images/icons8-django.svg"/> Django </span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-md-12 thirdDiv">
-      <h1>Projects</h1>
+        <h1 class="projects-title">Projects</h1>
+    </div>
+    <div class="col-md-12 fourthDiv">
+            <h1 class="projects-title">Projects</h1>
+        <div class="project-container">
+          <div class="box habit-card">
+            <h2 class="habit-title">HabitTracker <i class="fas fa-calendar-week" aria-hidden="true"></i> </h2>
+          </div>
+          <div class="box park-card">
+            <h2 class="parkadvisor-title">ParkAdvisor <i class="fas fa-tree"></i> </h1>
+          </div>
+          <div class="box project-item">
+            <h2 class="project-title">HabitTracker <i class="fas fa-calendar-week" aria-hidden="true"></i></h2>
+          </div>
+        </div>
     </div>
   </div>
 
