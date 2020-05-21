@@ -70,7 +70,7 @@
 
 .skills-container{
   display: flex;
-  /* border: 2px red solid; */
+  border: 2px purple solid;
   height: 95vh;
   justify-content: space-around;
   align-items: center;
@@ -119,8 +119,16 @@
   justify-content: center; */
   /* align-items: center; */
   width: 35vh;
-  /* border: 2px palegreen solid; */
+  border: 2px palegreen solid;
   text-align: center;
+}
+
+.front-end{
+  border: 2px solid pink;
+}
+
+.server{
+  border: 2px solid yellowgreen;
 }
 
 
@@ -160,6 +168,14 @@
 
 }
 
+.skills-container .row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px lightgreen solid;
+  height: 100%;
+  width: 100%;
+}
 .projects-title{
   display: flex;
   align-items: center;
@@ -169,9 +185,20 @@
   padding-top: 10vh;
 }
 
+.fourthDiv .row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px lightgreen solid;
+  height: 100%;
+  width: 100%;
+}
+
 .project-container{
   display: flex;
   justify-content: space-around;
+  padding: 15px;
+  border: 2px solid green;
 }
 
 .habit-card{
@@ -272,7 +299,7 @@
   align-items: center; */
   /* border: 2px solid red; */
   /* background-color: #FCBF49; */
-  height: 95vh;
+  height: 105vh;
 
   color: black;
   /* background-image: url("http://aaronjp.com/img/fast.gif");
@@ -293,4 +320,52 @@
   /* clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%); */
   clip-path: polygon(0 8%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0);
 
+}
+
+.game-card{
+  /* border: 2px solid red; */
+  width: 25vw;
+  height: 35vh;
+  background-color: white;
+  background-image: linear-gradient(to right bottom, rgba(160, 9, 9, 0.7), rgba(255, 8, 0, 0.6)), url(https://images.unsplash.com/photo-1535043205849-513fe27db33e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80);
+  background-size: cover;
+  background-position: 35% 55%;
+  /* box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8; */
+  box-shadow: 0px 10px 13px -7px #000000;
+  color: purple;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.roommate-card{
+  /* border: 2px solid red; */
+  width: 25vw;
+  height: 35vh;
+  background-color: white;
+  background-image: linear-gradient(to right bottom, rgba(0, 121, 158, 0.7), rgba(1, 87, 128, 0.6)), url(https://user-images.githubusercontent.com/1754248/35767821-d33cce64-08a7-11e8-8bdf-62fcafef570f.png);
+  background-size: cover;
+  background-position: 35% 55%;
+  /* box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8; */
+  box-shadow: 0px 10px 13px -7px #000000;
+  color: purple;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.book-card{
+  /* border: 2px solid red; */
+  width: 25vw;
+  height: 35vh;
+  background-color: white;
+  background-image: linear-gradient(to right bottom, rgba(158, 0, 92, 0.7), rgba(211, 22, 170, 0.6)), url(https://github.com/ajay-k/BookSearch/blob/master/Screenshots/SearchResults.png?raw=true);
+  background-size: cover;
+  background-position: 35% 55%;
+  /* box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8; */
+  box-shadow: 0px 10px 13px -7px #000000;
+  color: purple;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 12px;
 }
