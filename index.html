@@ -29,13 +29,20 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#Projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link" href="#Skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#AboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ContactMe">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
           </li>
         </ul>
       </div>
@@ -46,7 +53,7 @@
     <div class="col-md-12 firstDiv">
       <h1>Hello I'm Ajay</h1>
     </div>
-    <div class="col-md-12 secondDiv">
+    <div class="col-md-12 secondDiv" id="Skills">
       <h1 class="section-title">Skills</h1>
       <div class="skills-container">
         <div class="row">
@@ -91,11 +98,11 @@
         </div>
       </div>
     </div>
-    <div class="col-md-12 thirdDiv">
+    <div class="col-md-12 thirdDiv" id="AboutMe">
         <h1 class="projects-title">About Me</h1>
         <p>Full-Stack Engineer who loves designing and coding user friendly programs that solve real world problems to make people’s lives easier. I’m eager to learn new languages and techniques along my journey as a software engineer.</p>
     </div>
-    <div class="col-md-12 fourthDiv">
+    <div class="col-md-12 fourthDiv" id="Projects">
         <h1 class="projects-title">Projects</h1>
         <div class="project-cont">
             <div class="row">
@@ -152,7 +159,37 @@
               </div>
           </div>
     </div>
+
+    <div class="col-md-12 thirdDiv" id="ContactMe">
+        <h1 class="projects-title">Let's Connect!</h1>
+
+
+        <div class="contact-form">
+          <form id="contact-form" action="https://formspree.io/xqkyppor" method="POST">
+
+              <input  class="form-control form-color" name="name" type="text" placeholder="Name">
+
+              <input class="form-control" type="text" name="_replyto"  placeholder="Email" required>
+
+              <textarea class="form-control" name="message" placeholder="Message" row="4" required></textarea>
+
+
+              <!-- your other form fields go here -->
+            <input class="form-control submit" type="submit" value="SEND MESSAGE">
+          </form>
+        </div>
+
+      
+    </div>
+    
+    
+
   </div>
+
+   <footer>
+    <p>Author: Hege Refsnes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+  </footer> 
 
 </body>
 </html>
