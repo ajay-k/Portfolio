@@ -41,6 +41,7 @@
   
 }
 
+
 #job-title{
   border-bottom: 3px white solid;
 }
@@ -57,7 +58,8 @@
 }
 
 .projects-btn:hover{
-  background-color: rgb(104, 45, 104);
+  background-color: white;
+  color: rgb(104, 45, 104);
 }
 
 .secondDiv{
@@ -76,7 +78,7 @@
   min-height: 110vh;
   /* clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0); */
   transform: skewY(-5deg);
-
+  /* border: 2px solid #495867; */
   background-color: #F7F7F2;
 
 }
@@ -102,7 +104,6 @@
 
 .skills-container{
   display: flex;
-  /* border: 2px purple solid; */
   min-height: 110vh;
   justify-content: space-around;
   align-items: center;
@@ -134,7 +135,6 @@
   width: 35vh;
   /* height: 100px; */
   /* border-bottom: 3px black solid; */
-  /* border: 3px gray solid; */
   height: 50vh;
   background-color:rgb(142, 57, 153, 0.6);
   /* margin: 10px; */
@@ -146,6 +146,14 @@
 
 
 
+}
+
+.tech-items-container{
+  width: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
