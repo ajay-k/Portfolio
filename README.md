@@ -34,13 +34,10 @@ I wanted to develop this project so I would have the ability to showcase my curr
 
 
 ## Screenshots
-![Habit Page Screenshot](https://user-images.githubusercontent.com/1754248/81543295-b56dc180-932a-11ea-90d8-cd19db9c009b.png)
-
-## Wireframe (Prototype)
 ![Landing](https://user-images.githubusercontent.com/1754248/82870285-8c316180-9ee4-11ea-80a0-347c17760897.png)
 ![Projects](https://user-images.githubusercontent.com/1754248/82870331-9ce1d780-9ee4-11ea-8a6c-bb7a5c9d278f.png)
 
-## ERD (Models)
+## Wireframe (Prototype)
 ![WebsiteDesign](https://user-images.githubusercontent.com/1754248/82870380-b3882e80-9ee4-11ea-8a71-1e709b497c62.png)
 
 
@@ -48,6 +45,10 @@ I wanted to develop this project so I would have the ability to showcase my curr
 * Add more details to about me page
 
 * Add more information on landing page
+
+* Add smooth scrolling
+
+* Add Uniform font usage
 
 ## Sources
 [CSS Tricks](https://css-tricks.com/)

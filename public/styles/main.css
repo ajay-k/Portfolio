@@ -5,6 +5,7 @@
 
 .firstDiv{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   /* border: 2px solid red; */
@@ -38,6 +39,25 @@
   /* position:absolute; */
 
   
+}
+
+#job-title{
+  border-bottom: 3px white solid;
+}
+
+.projects-btn{
+  margin-top: 15px;
+  border-radius: 10rem;
+  background-color: white;
+  color: gray;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  border-color: #4C5F9A;
+
+}
+
+.projects-btn:hover{
+  background-color: rgb(104, 45, 104);
 }
 
 .secondDiv{
