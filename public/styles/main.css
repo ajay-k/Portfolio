@@ -30,7 +30,9 @@
   border-bottom-left-radius: 20%;
   border-top-right-radius: 20% */
   /* border-top-left-radius: 5%; */
-  clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0);
+  /* clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0); */
+  /* transform: skewY(-5deg); */
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%)
   /* overflow: hidden; */
   /* clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%) */
   /* position:absolute; */
@@ -52,7 +54,9 @@
   /* clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%); */
   /* clip-path: polygon(0 25%, 100% 0%, 100% 75%, 0% 100%); */
   min-height: 110vh;
-  clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0);
+  /* clip-path: polygon(20% 0%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0); */
+  transform: skewY(-5deg);
+
   background-color: #F7F7F2;
 
 }
@@ -68,7 +72,11 @@
   font-family: 'Playfair Display', serif;
   /* justify-content: center;
   text-align: center; */ 
+  transform: skewY(5deg);
+
   color: rgb(142, 57, 153, 0.6);
+  padding-top: 5vh;
+
 }
 
 .skills-container{
@@ -77,6 +85,7 @@
   min-height: 110vh;
   justify-content: space-around;
   align-items: center;
+  transform: skewY(5deg);
 
 
   color: white;
@@ -92,11 +101,13 @@
   /* margin: 10px; */
   /* box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 2px gray; */
   /* box-shadow: 5px 5px 15px 5px #000000; */
-  margin-bottom: 7rem;
-
+  transition: transform .5s;
+  margin: 5px;
 
 
 }
+
+
 .item-container{
   display: flex;
   flex-direction: column;
@@ -128,6 +139,12 @@
   /* border: 2px palegreen solid; */
   text-align: center;
   
+}
+
+.tech:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 
 .front-end{
@@ -171,7 +188,9 @@
   border-top-right-radius: 20% */
   /* border-top-left-radius: 5%; */
   /* clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%); */
-  clip-path: polygon(0 8%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0);
+  /* clip-path: polygon(0 8%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0); */
+  transform: skewY(-5deg);
+
 
 }
 
@@ -182,6 +201,8 @@
   /* border: 2px lightgreen solid; */
   height: 100%;
   width: 100%;
+  margin-bottom: 10rem;
+
 }
 .projects-title{
   display: flex;
@@ -202,7 +223,9 @@
   align-items: center;
   color: white;
   box-sizing: border-box;
-  width: 100%
+  width: 100%;
+  transform: skewY(5deg);
+
 }
 
 .project-cont .row{
@@ -329,7 +352,7 @@
   /* border: 2px solid red; */
   /* background-color: #FCBF49; */
 
-  min-height: 110vh;
+  min-height: 80vh;
 
   color: black;
   /* background-image: url("http://aaronjp.com/img/fast.gif");
@@ -348,7 +371,9 @@
   border-top-right-radius: 20% */
   /* border-top-left-radius: 5%; */
   /* clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%); */
-  clip-path: polygon(0 8%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0);
+  /* clip-path: polygon(0 8%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0); */
+  transform: skewY(-5deg);
+
   /* border: 5px pink solid; */
 
 }
@@ -449,7 +474,7 @@ form{
 }
 
 .form-control{
-  width: 600px;
+  /* min-width: 600px; */
   background: transparent;
   border: none;
   outline: none;
@@ -461,11 +486,20 @@ form{
 } 
 
 input{
-  height: 45px;
+  min-height: 45px;
+}
+
+.contact-form{
+  /* transform: skewY(5deg); */
+
+}
+
+.fifthDiv .projects-title{
+  /* transform: skewY(5deg); */
 }
 
 .contact-form textarea {
-  height: 150px;
+  min-height: 150px;
 }
 
 .contact-form ::placeholder { /* Firefox, Chrome, Opera */ 
@@ -494,7 +528,7 @@ form .submit{
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
-  height: 50px;
+  min-height: 50px;
   margin-top: 20px;
 }
 
@@ -507,4 +541,85 @@ form .submit:hover{
 .resume-container{
   height: 100vh;        /* Viewport-relative units */
   width: 100vw;
+}
+
+.fifthDiv{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* border: 2px solid red; */
+  /* background-color: #FCBF49; */
+  height: 95vh;
+
+  color: white;
+  /* background-image: url("http://aaronjp.com/img/fast.gif");
+  background-size:100% 100%;
+  background-color: #f8ceec; */
+  /* background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%); */
+  background-image: linear-gradient(to right bottom, rgba(30, 115, 172, 0.7), rgba(142, 57, 153, 0.6)), url(../images/plane_view.gif);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 10vh, 100% 0, 100% 100vh, 0 100%)
+
+  /* clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%); */
+  /* background: linear-gradient(135deg, transparent 30px, #333 0); */
+    
+
+  /* mix-blend-mode: multiply;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20% */
+  /* border-top-left-radius: 5%; */
+  /* clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%); */
+  /* clip-path: polygon(0 8%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 100%, 0 100%, 0 0); */
+  /* transform: skewY(-5deg); */
+
+
+}
+
+footer{
+  background-color: #4C5F9A;
+  /* clip-path: polygon(0 100%, 100% 0, 100% 20%, 100% 80%, 100% 100%, 100% 93%, 0 100%, 0 0); */
+  /* height: 15rem; */
+  margin-top: 15px;
+  margin-bottom: 2rem;
+  /* border: 5px solid green; */
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+
+.top-row{
+  /* border: 2px red solid; */
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.top-row a{
+  color: white;
+  padding: 5px;
+}
+
+.bottom-row{
+  /* border: 2px limegreen solid; */
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  
+}
+
+.bottom-row p{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  color: white;
+  /* border: 2px solid plum; */
 }
