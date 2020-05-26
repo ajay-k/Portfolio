@@ -70,6 +70,7 @@
   text-align: center;
   justify-content: center;
   font-family: 'Playfair Display', serif;
+  font-size: 64px;
   /* justify-content: center;
   text-align: center; */ 
   transform: skewY(5deg);
@@ -135,7 +136,7 @@
   /* display: table-column */
   vertical-align: middle;
   /* left: 50%; */
-  padding-left: 6vw;
+  padding-left: 5.5vw;
   /* padding-left: 50%; */
   /* border: white 5px solid; */
 
