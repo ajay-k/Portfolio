@@ -91,6 +91,16 @@
   color: white;
 }
 
+.about-me-container{
+  transform: skewY(5deg);
+
+}
+
+.about-me-description{
+  font-size: 36px;
+  font-weight: bolder;
+}
+
 .tech{
   width: 35vh;
   /* height: 100px; */
@@ -103,6 +113,8 @@
   /* box-shadow: 5px 5px 15px 5px #000000; */
   transition: transform .5s;
   margin: 5px;
+  border-radius: 5px;
+
 
 
 }
@@ -226,6 +238,16 @@
   width: 100%;
   transform: skewY(5deg);
 
+}
+
+.tech-image{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  height: 150px;
+  
 }
 
 .project-cont .row{
