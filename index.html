@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/c4410df193.js" crossorigin="anonymous"></script>
-   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">  
   <!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <!-- JS, Popper.js, and jQuery -->
@@ -12,16 +18,17 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+   
  
   <link rel="stylesheet" href="public/styles/main.css">
   <title>Ajay Kumar | Full Stack Software Engineer</title>
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">AK</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span><i class="fas fa-bars"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
@@ -50,162 +57,213 @@
   </header>
 
   <div class="container-fluid">
-    <div class="col-md-12 firstDiv">
-      <h1>Hello I'm Ajay</h1>
-      <h1>I'm a <span id="job-title">Full Stack Software Developer</span></h1>
-      <a href="#Projects"><button type="button" class="btn-lg btn-primary projects-btn">View Projects </button></a>
-    </div>
-    <div class="col-md-12 secondDiv" id="Skills">
-      <h1 class="section-title">Skills</h1>
-      <div class="skills-container">
-        <div class="row">
 
-          <div class="tech-items-container">
-            <img class="tech-image" src="public/images/front-end.svg"/>
-              <div class="front-end tech">
-                <h1 class="tech-title">Front End</h1>
-                <div class="front-end-items item-container">
-                  <span class="tech-item"><img src="public/images/icons8-html-5.svg"/> HTML 5 </span>
-                  <span><img src="public/images/icons8-css3.svg"/> CSS </span>
-                  <span><img src="public/images/icons8-javascript.svg"/> Javascript</span>
-                  <span><img src="public/images/icons8-django.svg"/> Django </span>
-                  <span><img src="public/images/icons8-react-native.svg"/> React </span>
+    <div class="container-fluid px-0">
+        <div class="row AboutMe">
+          <div class="col-md-4 avatar">
+                 <img id="self-img"class="rounded-circle img-fluid shadow p-2 mb-5 bg-white" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQEw4I6TrmUyYg/profile-displayphoto-shrink_800_800/0/1585710665485?e=1617840000&v=beta&t=RW22vMTTircQrCBxkvpemRRxvr9oIsdZAO2ZxgKiayQ"
+                  data-holder-rendered="true">
+          </div>
+
+          <div class="col-md-6 aboutText">
+            <p class="speech-bubble">
+              I graduated from UC Davis with a degree in computer science. 
+              After working in other industries, I decided to dive back into my 
+              passion of coding and enrolled in GA boot camp where I knew it was 
+              the industry for me! I loved coding and solving problems, I found 
+              myself always thinking and trying to find the most efficient way to 
+              solve a problem. During my time at GA I loved working with team members to 
+              create a fully functionally and responsive site that had a great user interface!
+            </p>
+          </div>
+         
+        </div>
+
+        <div class="row Skills" id="Skills">
+          <div class="boxOne col-md-6">
+            <h3>Here are a few technologies I've been working with recently:</h3>
+            <div class="row row1">
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><img src="public/images/icons8-python.svg"/> Python </span></h4>
                 </div>
               </div>
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><img src="public/images/icons8-react-native.svg"/> React </span></h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row2">
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span class="tech-item"><img src="public/images/icons8-html-5.svg"/> HTML 5 </span></h4>
+                </div>
+              </div>
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"> <span><img src="public/images/icons8-javascript.svg"/> Javascript</span></h4>
+                </div>
+              </div>
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><img src="public/images/icons8-css3.svg"/> CSS </span></h4>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row row3">
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><img src="public/images/icons8-django.svg"/> Django </span></h4>
+                </div>
+              </div>
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><img src="public/images/icons8-mongodb.svg"/> MongoDB </span></h4>
+                </div>
+              </div>
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><img src="public/images/icons8-swift.svg"/> Swift </span></h4>
+                </div>
+              </div>
+            </div>
+
+
+          </div> 
+          <div class="boxTwo col-md-6">
+            <h3>I also have expereince with:</h3>
+
+            <div class="row row1">
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><span><img src="public/images/icons8-nodejs.svg"/> NodeJS </span></h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row2">
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"> <span><img src="public/images/icons8-php-logo.svg"/> PHP </span></h4>
+                </div>
+              </div>
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><img src="public/images/icons8-postgresql.svg"/> PostgreSQL </span></h4>
+                </div>
+              </div>
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><img src="public/images/mongoose1.png" width="48px" height="30px"/> Mongoose </span></h4>
+                </div>
+              </div>
+            </div>
+            <div class="row row3">
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><img src="public/images/icons8-c++.svg"/> C++ </span></h4>
+                </div>
+              </div>
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><img src="public/images/icons8-java.svg"/> Java </span></h4>
+                </div>
+              </div>
+              <div class="card skillsCard">
+                <div class="card-body">
+                  <h4 class="card-title"><span><img src="public/images/prolog.svg"/> Prolog </span></h4>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-         <div class="tech-items-container">
-            <img class="tech-image" src="public/images/server.svg"/>
-          <div class="server tech">
-            <h1 class="tech-title">Server</h1>
-            <div class="server-items item-container">
-              <span><img src="public/images/icons8-nodejs.svg"/> NodeJS </span>
-              <span><img src="public/images/icons8-css3.svg"/> Express </span>
-              <span><img src="public/images/icons8-python.svg"/> Python </span>
-              <span><img src="public/images/icons8-php-logo.svg"/> PHP </span>
-            </div>
-          </div>
         </div>
+
+        <div class="row Projects col-md-12" id="Projects">
+          <h1>Projects</h1>
+          <div class="row project-boxes">
+            <div class="box habit-card col-md-3">
+              <h2 class="habit-title card-title">HabitTracker <i class="fas fa-calendar-week"></i></h2>
+              <div class="card-description">
+                <p class="img__description">Track your habits, whether good or bad and see your progress visually using the calendar UI!</p>
+                <a href="https://github.com/ajay-k/HabitTracker" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://habittrackerchain.herokuapp.com/habits/ target="_blank><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+
+            <div class="box park-card col-md-3">
+              <h2 class="parkadvisor-title habit-title card-title">ParkAdvisor <i class="fas fa-tree"></i> </h2>
+              <div class="card-description">
+                <p class="img__description">Explore US National Parks! Users can add reviews to share and rate their park experiences.</p>
+                <a href="https://github.com/lauragsack/ParkAdvisor" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="http://park-advisor.herokuapp.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+
+              <div class="box hangman-card col-md-3">
+                <h2 class="hangman-title habit-title card-title">Hangman <i class="fas fa-male"></i></h2>
+                <div class="card-description">
+                  <p class="img__description">Generates a random word for the user to solve. The user guesses letters to solve the word using the keyboard displayed on screen. </p>
+                  <a href="https://github.com/ajay-k/hangman" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="https://ajay-k.github.io/hangman/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+
+            <div class="box game-card col-md-3">
+                <h2 class="habit-title card-title">Game-informant <i class="fas fa-gamepad"></i></h2>
+                <div class="card-description">
+                  <p class="img__description">Shows relevant information pertaining to a game and allows users to see trending games or search for specific games and add them to their favorites collection.</p>
+                  <a href="https://github.com/jakerjohnson21/game-informant" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="box roommate-card col-md-3">
+                <h2 class="habit-title card-title">RoommateCalc <i class="fas fa-calculator"></i></h2>
+                <div class="card-description">
+                  <p class="img__description">Calculate roommate's monthly rent quickly and send valuable information to rommates on iOS!</p>
+                  <a href="https://github.com/ajay-k/RoommateCalculator" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+             </div>
           
-        <div class="tech-items-container">
-            <img class="tech-image" src="public/images/database.svg"/>
-          <div class="database tech">
-            <h1 class="tech-title">Database</h1>
-            <div class="server-items item-container">
-              <span><img src="public/images/icons8-postgresql.svg"/> PostgreSQL </span>
-              <span><img src="public/images/icons8-mongodb.svg"/> MongoDB </span>
-              <span><img src="public/images/mongoose1.png"/ width="48px" height="30px"> Mongoose </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tech-items-container">
-            <img class="tech-image" src="public/images/coding.svg"/>
-          <div class="programming-lang tech">
-            <h1 class="tech-title">Languages</h1>
-            <div class="server-items item-container">
-              <span><img src="public/images/icons8-python.svg"/> Python </span>
-              <span><img src="public/images/icons8-c++.svg"/> C++ </span>
-              <span><img src="public/images/icons8-swift.svg"/> Swift </span>
-              <span><img src="public/images/icons8-java.svg"/> Java </span>
-              <span><img src="public/images/prolog.svg"/> Prolog </span>
-            </div>
-          </div>
-        </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="col-md-12 thirdDiv" id="AboutMe">
-        <div class="about-me-container">
-            <h1 class="projects-title">About Me</h1>
-            <div class="about-me-info">
-            <img src="public/images/programmer.svg" width="248px" height="248px">
-            <p class="about-me-description"> I graduated from UC Davis with a degree in computer science. After working in other industries,
-                I decided to dive back into my passion of coding and enrolled in GA boot camp where I knew it was the industry for me! 
-                I loved coding and solving problems, I found myself always thinking and trying to find the most efficient was to solve a problem.
-                During my time at GA I loved working with team members to create a fully functionally and responsive site that had a great user interface! 
-            </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-12 fourthDiv" id="Projects">
-        <h1 class="section-title">Projects</h1>
-        <div class="project-cont">
-            <div class="row">
-                        <div class="box habit-card col-md-3">
-                          <h2 class="habit-title card-title">HabitTracker <i class="fas fa-calendar-week"></i></h2>
-                          <div class="card-description">
-                            <p class="img__description">Track your habits, whether good or bad and see your progress visually using the calendar UI!</p>
-                            <a href="https://github.com/ajay-k/HabitTracker" target="_blank">Github Repo Link</a>
-                            <a href="https://habittrackerchain.herokuapp.com/habits/ target="_blank"">Live Demo</a>
-                          </div>
-                        </div>
-
-                        <div class="box park-card col-md-3">
-                          <h2 class="parkadvisor-title habit-title card-title">ParkAdvisor <i class="fas fa-tree"></i> </h1>
-                          <div class="card-description">
-                            <p class="img__description">Explore US National Parks! Users can add reviews to share and rate their park experiences.</p>
-                            <a href="https://github.com/lauragsack/ParkAdvisor" target="_blank">Github Repo Link</a>
-                            <a href="http://park-advisor.herokuapp.com" target="_blank">Live Demo</a>
-                          </div>
-                        </div>
-
-                        <div class="box hangman-card col-md-3">
-                          <h2 class="hangman-title habit-title card-title">Hangman<img id="hang" src="public/images/icons8-pivot-animator.svg"></h2>
-                          <div class="card-description">
-                            <p class="img__description">Generates a random word for the user to solve. The user guesses letters to solve the word using the keyboard displayed on screen. </p>
-                            <a href="https://github.com/ajay-k/hangman" target="_blank">Github Repo Link</a>
-                            <a href="https://ajay-k.github.io/hangman/" target="_blank">Live Demo</a>
-                          </div>
-                        </div>
-
-                      <div class="box game-card col-md-3">
-                          <h2 class="habit-title card-title">Game-informant <i class="fas fa-gamepad"></i></h2>
-                          <div class="card-description">
-                            <p class="img__description">Shows relevant information pertaining to a game and allows users to see trending games or search for specific games and add them to their favorites collection.</p>
-                            <a href="https://github.com/jakerjohnson21/game-informant" target="_blank">Github Repo Link</a>
-                          </div>
-                      </div>
-
-                      <div class="box roommate-card col-md-3">
-                          <h2 class="habit-title card-title">RoommateCalc <i class="fas fa-calculator"></i></h2>
-                          <div class="card-description">
-                            <p class="img__description">Calculate roommate's monthly rent quickly and send valuable information to rommates on iOS!</p>
-                            <a href="https://github.com/ajay-k/RoommateCalculator" target="_blank">Github Repo Link</a>
-                          </div>
-                      </div>
-                      
-                      <div class="box book-card col-md-3">
-                        <h2 class="habit-title card-title">BookSearch <i class="fas fa-book"></i></h2>
-                          <div class="card-description">
-                            <p class="img__description">iOS app which using's Apple's Itunes API to grab data for book information</p>
-                            <a href="https://github.com/ajay-k/BookSearch" target="_blank">Github Repo Link</a>
-                          </div>
-                      </div>
+              <div class="box book-card col-md-3">
+                <h2 class="habit-title card-title">BookSearch <i class="fas fa-book"></i></h2>
+                  <div class="card-description">
+                    <p class="img__description">iOS app which using's Apple's Itunes API to grab data for book information</p>
+                    <a href="https://github.com/ajay-k/BookSearch" target="_blank"><i class="fab fa-github"></i></a>
+                  </div>
               </div>
           </div>
-    </div>
-
-    <div class="col-md-12 fifthDiv" id="ContactMe">
-        <h1 class="projects-title">Let's Connect!</h1>
-        <div class="contact-form container">
-          <form id="contact-form" action="https://formspree.io/xqkyppor" method="POST">
-
-              <input  class="form-control form-color col-md-6" name="name" type="text" placeholder="Name">
-
-              <input class="form-control col-md-6" type="text" name="_replyto"  placeholder="Email" required>
-
-              <textarea class="form-control col-md-6" name="message" placeholder="Message" row="4" required></textarea>
-
-
-              <!-- your other form fields go here -->
-            <input class="form-control submit" type="submit" value="SEND MESSAGE">
-          </form>
+         
         </div>
 
-      
+        <div class="row ContactMeForm container-fluid">
+          <h1>Let's Connect!</h1>
+          <div class="contact-form container">
+            <form id="contact-form" action="https://formspree.io/xqkyppor" method="POST">
+  
+                <input  class="form-control form-color col-md-6" name="name" type="text" placeholder="Name">
+  
+                <input class="form-control col-md-6" type="text" name="_replyto"  placeholder="Email" required>
+  
+                <textarea class="form-control col-md-6" name="message" placeholder="Message" row="4" required></textarea>
+  
+  
+              <input class="form-control submit" type="submit" value="SEND MESSAGE">
+            </form>
+          </div>
+  
+
+        
+
     </div>
+
+  </div>
+   
     
     
 
@@ -213,11 +271,11 @@
       
         <div class="footer-content row">
             <div class="top-row">
-                <a href="https://github.com/ajay-k" target="_blank"> Github |</a><a href="http://linkedin.com/in/ajay-ku/" target="_blank"> LinkedIn |</a> <a href="resume.html" target="_blank">Resume</a>
+                <a href="https://github.com/ajay-k" target="_blank"> Github |</a><a href="http://linkedin.com/in/ajay-ku/" target="_blank"> LinkedIn |</a> <a href="resume.html" target="_blank">Resume </a>
             </div>
             <div class="bottom-row">
                 <p>
-                  Design by Ajay Kumar |
+                   Design by Ajay Kumar |
                 </p>
                 <p>
                 Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
