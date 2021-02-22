@@ -18,14 +18,19 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-   
- 
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
   <link rel="stylesheet" href="public/styles/main.css">
+  <script src="public/js/main.js"></script>
+
   <title>Ajay Kumar | Full Stack Software Engineer</title>
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#">AK</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fas fa-bars"></i></span>
@@ -42,9 +47,6 @@
             <a class="nav-link" href="#Skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#AboutMe">About Me</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#ContactMe">Contact</a>
           </li>
 
@@ -56,9 +58,7 @@
     </nav>
   </header>
 
-  <div class="container-fluid">
 
-    <div class="container-fluid px-0">
         <div class="row AboutMe">
           <div class="col-md-4 avatar">
                  <img id="self-img"class="rounded-circle img-fluid shadow p-2 mb-5 bg-white" alt="100x100" src="https://media-exp1.licdn.com/dms/image/C5603AQEw4I6TrmUyYg/profile-displayphoto-shrink_800_800/0/1585710665485?e=1617840000&v=beta&t=RW22vMTTircQrCBxkvpemRRxvr9oIsdZAO2ZxgKiayQ"
@@ -76,7 +76,10 @@
               create a fully functionally and responsive site that had a great user interface!
             </p>
           </div>
-         
+
+          <div class="row scroll-down"> 
+            <i class="fas fa-chevron-down animate__animated animate__bounce animate__infinite animate__delay-2s"></i>
+          </div>         
         </div>
 
         <div class="row Skills" id="Skills">
@@ -187,7 +190,7 @@
         <div class="row Projects col-md-12" id="Projects">
           <h1>Projects</h1>
           <div class="row project-boxes">
-            <div class="box habit-card col-md-3">
+            <div class="box habit-card col-md-3 animate__animated animate__pulse animate__infinite animate__slow">
               <h2 class="habit-title card-title">HabitTracker <i class="fas fa-calendar-week"></i></h2>
               <div class="card-description">
                 <p class="img__description">Track your habits, whether good or bad and see your progress visually using the calendar UI!</p>
@@ -241,7 +244,7 @@
          
         </div>
 
-        <div class="row ContactMeForm container-fluid">
+        <div class="row ContactMeForm">
           <h1>Let's Connect!</h1>
           <div class="contact-form container">
             <form id="contact-form" action="https://formspree.io/xqkyppor" method="POST">
@@ -256,37 +259,35 @@
               <input class="form-control submit" type="submit" value="SEND MESSAGE">
             </form>
           </div>
+        </div>
   
 
         
 
-    </div>
-
-  </div>
+     
    
     
     
 
-  <footer>
-      
-        <div class="footer-content row">
-            <div class="top-row">
-                <a href="https://github.com/ajay-k" target="_blank"> Github |</a><a href="http://linkedin.com/in/ajay-ku/" target="_blank"> LinkedIn |</a> <a href="resume.html" target="_blank">Resume </a>
-            </div>
-            <div class="bottom-row">
-                <p>
-                   Design by Ajay Kumar |
-                </p>
-                <p>
-                Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
-                </p>
-            </div>
-        </div>
+    <footer>
         
-    
-  </footer> 
+          <div class="row footer-content">
+              <div class="top-row">
+                  <a href="https://github.com/ajay-k" target="_blank"> Github </a> • <a href="http://linkedin.com/in/ajay-ku/" target="_blank"> LinkedIn </a> • <a href="resume.html" target="_blank"> Resume </a>
+              </div>
+              <div class="bottom-row">
+                  <p>
+                    Design by Ajay Kumar |
+                  </p>
+                  <p>
+                  Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+                  </p>
+              </div>
+          </div>
+          
+      
+    </footer> 
 
-  </div>
 
 
 </body>
