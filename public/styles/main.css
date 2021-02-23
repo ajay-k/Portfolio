@@ -11,6 +11,7 @@ html {
   color:  #D8A016  !important;
   width: 100px;
   height: 45px;
+  border: 2px ridge white;
 }
 
 .logo{
@@ -39,14 +40,12 @@ html {
   height: 60vw;
   width: 100%;
   padding-top: 10rem;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
   /* padding: 0 !important; */
   /* border-bottom: white 15px solid; */
+  /* margin-top: 5rem; */
 }
 
-.aboutText{
-  /* border: 2px solid green; */
-}
 
 .avatar{
   /* border: 2px solid purple; */
@@ -57,12 +56,26 @@ html {
 }
 
 .aboutText{
+  color: white;
+  font-size: larger;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: larger;
+  flex-direction: column;
+  width: 100%;
 }
+
+
+
+.message-read{
+  color: grey;
+  display: flex;
+  justify-content: flex-end !important;
+  align-items: flex-end;
+  width: 100%;
+
+}
+
 
 .scroll-down{
   display: flex;
@@ -80,6 +93,7 @@ html {
 .arrow{
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .Skills{
@@ -309,6 +323,8 @@ span{
   font-family: 'Roboto', sans-serif;
 }
 
+
+
 .speech-bubble:after {
 	content: '';
 	position: absolute;
@@ -461,6 +477,7 @@ footer{
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  font-size: large;
 }
 
 @media (max-width: 768px) {
@@ -523,4 +540,12 @@ footer{
     margin-left: -10px;
     margin-top: -20px;
   }
+}
+
+@media (max-width: 1024px) {
+  /* .AboutMe{
+    width: 100vw;  
+    padding-top: 10rem;
+    height: 80vw;
+  } */
 }
