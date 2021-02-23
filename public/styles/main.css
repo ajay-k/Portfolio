@@ -13,6 +13,11 @@ html {
   height: 45px;
 }
 
+.logo{
+  width: 100px;
+  height: 45px;
+}
+
 
 .navbar .navbar-toggler{
   color: white;
