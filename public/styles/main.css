@@ -542,6 +542,75 @@ footer{
   }
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.projects-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.projects-section h1, .skills-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+.project-cards, .skills-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.project-card, .skills-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+  position: relative;
+  text-align: center;
+}
+.project-card:hover, .skills-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.project-card h2, .skills-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0077cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-card h2 i, .skills-card h3 i {
+  margin-left: 0.5rem;
+}
+.project-card p, .skills-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+.project-card a {
+  color: #0077cc;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+.project-card a:hover {
+  color: #005fa3;
+}
+.skills-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 1024px) {
   /* .AboutMe{
     width: 100vw;  
