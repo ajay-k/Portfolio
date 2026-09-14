@@ -1,14 +1,12 @@
 # Portfolio
 
-My portfolio is a website developed using **HTML**, **CSS**, and **Bootstrap**. It was designed to showcase my projects and share some information about me.
+My portfolio is a website developed using **HTML**, **CSS**, and **JavaScript**, with no frameworks. It was designed to showcase my projects and share some information about me.
 
-* Responsive
+* iMessage-style introduction with tappable suggested replies
 
-* Contact Form
+* Responsive, with light and dark themes
 
-* Visual animations which react when users interacts with objects
-
-* Loads of icons!
+* Contact form powered by Formspree
 
 ## Usage
 
@@ -27,7 +25,8 @@ My portfolio is a website developed using **HTML**, **CSS**, and **Bootstrap**. 
 ## Technologies used
 * HTML
 * CSS
-* Bootstrap
+* JavaScript
+* [Formspree](https://formspree.io/) (contact form)
 
 ## Why take on this project?
 I wanted to develop this project so I would have the ability to showcase my current works and future work. This portfolio allows me to manage and display all my past projects along with having all my links to things such as my LinkedIn, Github, and Resume in one place.
