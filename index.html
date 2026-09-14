@@ -3,329 +3,213 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="57x57" href="public/images/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="public/images/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="public/images/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="public/images/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="public/images/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="public/images/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="public/images/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="public/images/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="public/images/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="public/images/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="public/images/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="public/images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <script src="https://kit.fontawesome.com/c4410df193.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,600&display=swap" rel="stylesheet">   
-  <!-- CSS only -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <!-- JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-  <link rel="stylesheet" href="public/styles/main.css">
-  <script src="public/js/main.js"></script>
-  <style>
-    body {
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f9f9f9;
-        color: #333;
-    }
-    .projects-section {
-        padding: 4rem 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .projects-section h1, .skills-section h1 {
-        text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
-        color: #222;
-    }
-    .project-cards, .skills-cards {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        justify-content: center;
-    }
-    .project-card, .skills-card {
-        background: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        width: 300px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        padding: 1.5rem;
-        position: relative;
-        text-align: center;
-    }
-    .project-card:hover, .skills-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-    .project-card h2, .skills-card h3 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        color: #0077cc;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .project-card h2 i, .skills-card h3 i {
-        margin-left: 0.5rem;
-    }
-    .project-card p, .skills-card p {
-        font-size: 1rem;
-        color: #555;
-        margin-bottom: 1.5rem;
-    }
-    .project-card a {
-        color: #0077cc;
-        margin-right: 1rem;
-        font-size: 1.2rem;
-    }
-    .project-card a:hover {
-        color: #005fa3;
-    }
-    .skills-card img {
-        width: 40px;
-        height: 40px;
-        margin-bottom: 1rem;
-    }
-</style>
-
   <title>Ajay Kumar | Senior Support Engineer</title>
+  <meta name="description" content="Ajay Kumar is a senior support engineer and UC Davis computer science graduate who fixes production issues and builds tools that make teams faster.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ajayku.com/">
+  <meta property="og:title" content="Ajay Kumar | Senior Support Engineer">
+  <meta property="og:description" content="I keep production running and build the tools that make teams faster.">
+  <meta property="og:image" content="https://ajayku.com/public/images/avatar.jpg">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="public/images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="public/images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="public/images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#F3F4F7">
+  <meta name="msapplication-TileImage" content="public/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#F3F4F7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0C0D10" media="(prefers-color-scheme: dark)">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="public/styles/main.css">
+  <script src="public/js/main.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#"><img src="public/images/logo.svg" class="logo img-fluid" alt="logo"/></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#AboutMe">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#ContactMe">Contact</a>
-          </li>
-        </ul>
+  <nav class="nav" aria-label="Primary">
+    <div class="wrap">
+      <a class="wordmark" href="#top">Ajay Kumar</a>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li class="optional"><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <div class="intro">
+        <img class="avatar" src="public/images/avatar-320.jpg" alt="Illustrated portrait of Ajay Kumar" width="84" height="84">
+        <p class="label">Senior Support Engineer</p>
+        <h1>Ajay Kumar</h1>
+        <p class="lede">I keep production running and build the tools that make teams faster. <span>UC Davis computer science graduate.</span></p>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn" href="https://github.com/ajay-k" target="_blank" rel="noopener">GitHub <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="btn" href="https://www.linkedin.com/in/ajay-ku/" target="_blank" rel="noopener">LinkedIn <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
       </div>
-    </nav>
+
+      <div class="messages" aria-label="Introduction from Ajay, styled as a message thread">
+        <div class="to-field">
+          <span>To:</span>
+          <span class="recipient">You</span>
+          <span class="service">iMessage</span>
+        </div>
+        <div class="thread" id="thread" aria-live="polite">
+          <p class="stamp"><b>iMessage</b><br>Today <span class="js-time"></span></p>
+          <p class="bubble out" style="--i:0">Hi, I'm Ajay.</p>
+          <p class="bubble out" style="--i:1">I studied computer science at UC Davis, and now I work as a senior support engineer.</p>
+          <p class="bubble out" style="--i:2">Day to day I dig into production issues, build tools that take the busywork out of workflows, and work with engineering teams to ship apps people find easy to use.</p>
+          <p class="bubble out tail" style="--i:3">I build side projects too. A few are below.</p>
+          <p class="receipt" id="receipt"><b>Read</b> <span class="js-time"></span></p>
+        </div>
+        <div class="replies" id="replies">
+          <p class="hint">Tap to reply</p>
+          <button class="chip" type="button" data-reply="work">What have you built?</button>
+          <button class="chip" type="button" data-reply="skills">What's your stack?</button>
+          <button class="chip" type="button" data-reply="contact">How do I reach you?</button>
+        </div>
+      </div>
+    </div>
   </header>
 
-    
-        <div class="row AboutMe" id="AboutMe">
-          <div class="col-md-4 avatar">
-                 <img id="self-img"class="rounded-circle img-fluid shadow p-2 mb-5 bg-white" alt="100x100" src="public/images/avatar.jpg"
-                  data-holder-rendered="true">
-          </div>
-
-          <div class="col-md-6 aboutText">
-            <p class="speech-bubble">
-              Hello my name is Ajay, I graduated from UC Davis with a degree in computer science. 
-              I’ve worked on fixing production issues, building tools to streamline workflows, and 
-              collaborating with teams to deliver functional, user-friendly applications. 
-              Beyond my role, I’ve worked on side projects that enhance team efficiency and 
-              provide creative solutions to complex problems. I’m constantly learning and evolving, 
-              eager to explore new technologies and contribute to impactful projects.
-            </p>
-            <p class="message-read animate__animated animate__fadeIn animate__delay-1s animate__slower">
-            </p>
-          </div>
-
-          <div class="row arrow bounce">
-            <a class="far fa-arrow-alt-circle-down fa-2x" href="#"></a>
-          </div>      
+  <main>
+    <section class="block" id="work">
+      <div class="wrap">
+        <div class="block-head">
+          <p class="label">Selected work</p>
+          <h2>Things I've built, solo and with teams.</h2>
         </div>
-
-        <div class="skills-section" id="Skills">
-          <h1>Skills</h1>
-          <div class="skills-cards">
-              <div class="skills-card">
-                  <img src="public/images/icons8-python.svg" alt="Python">
-                  <h3>Python</h3>
+        <div class="projects">
+          <article class="project">
+            <div class="project-head"><h3>Yello Mango</h3></div>
+            <p>A responsive food-delivery site built on the MERN stack that installs on phones as a progressive web app.</p>
+            <div class="project-foot">
+              <ul class="tags"><li>MongoDB</li><li>Express</li><li>React</li><li>Node.js</li><li>PWA</li></ul>
+              <div class="links"><span class="none">No link yet</span></div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-head"><h3>HabitTracker</h3></div>
+            <p>Log habits, good or bad, and watch your progress fill in on a calendar view.</p>
+            <div class="project-foot">
+              <ul class="tags"><li>Django</li><li>PostgreSQL</li></ul>
+              <div class="links"><a href="https://github.com/ajay-k/HabitTracker" target="_blank" rel="noopener">Code ↗</a></div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-head"><h3>ParkAdvisor</h3><span class="label">Team</span></div>
+            <p>Explore US national parks, then rate and review your visits for other travelers.</p>
+            <div class="project-foot">
+              <ul class="tags"><li>Django REST</li><li>PostgreSQL</li></ul>
+              <div class="links"><a href="https://github.com/lauragsack/ParkAdvisor" target="_blank" rel="noopener">Code ↗</a></div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-head"><h3>Game Informant</h3><span class="label">Team</span></div>
+            <p>Search any game or browse what's trending, then save favorites to your own collection.</p>
+            <div class="project-foot">
+              <ul class="tags"><li>Node.js</li><li>Express</li><li>MongoDB</li></ul>
+              <div class="links"><a href="https://github.com/jakerjohnson21/game-informant" target="_blank" rel="noopener">Code ↗</a></div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-head"><h3>RoommateCalc</h3></div>
+            <p>An iOS app that splits monthly rent between roommates and sends each person their share.</p>
+            <div class="project-foot">
+              <ul class="tags"><li>Swift</li><li>iOS</li></ul>
+              <div class="links"><a href="https://github.com/ajay-k/RoommateCalculator" target="_blank" rel="noopener">Code ↗</a></div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-head"><h3>Hangman</h3></div>
+            <p>The classic word game in the browser: a random word, an on-screen keyboard, and a limited number of guesses.</p>
+            <div class="project-foot">
+              <ul class="tags"><li>JavaScript</li></ul>
+              <div class="links">
+                <a href="https://github.com/ajay-k/hangman" target="_blank" rel="noopener">Code ↗</a>
+                <a href="https://ajay-k.github.io/hangman/" target="_blank" rel="noopener">Play ↗</a>
               </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-react-native.svg" alt="React">
-                  <h3>React</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-html-5.svg" alt="HTML 5">
-                  <h3>HTML 5</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-javascript.svg" alt="JavaScript">
-                  <h3>JavaScript</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-css3.svg" alt="CSS">
-                  <h3>CSS</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-django.svg" alt="Django">
-                  <h3>Django</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-mongodb.svg" alt="MongoDB">
-                  <h3>MongoDB</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-swift.svg" alt="Swift">
-                  <h3>Swift</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-nodejs.svg" alt="NodeJS">
-                  <h3>NodeJS</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-php-logo.svg" alt="PHP">
-                  <h3>PHP</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-postgresql.svg" alt="PostgreSQL">
-                  <h3>PostgreSQL</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/mongoose1.png" alt="Mongoose" width="48" height="30">
-                  <h3>Mongoose</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-c++.svg" alt="C++">
-                  <h3>C++</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/icons8-java.svg" alt="Java">
-                  <h3>Java</h3>
-              </div>
-              <div class="skills-card">
-                  <img src="public/images/prolog.svg" alt="Prolog">
-                  <h3>Prolog</h3>
-              </div>
-          </div>
+            </div>
+          </article>
+        </div>
       </div>
-        <div class="projects-section" id="Projects">
-          <h1>Projects</h1>
-          <div class="project-cards">
-              <div class="project-card">
-                  <h2>Yello Mango <i class="fas fa-utensils"></i></h2>
-                  <p>Responsive Food Delivery website that can be downloaded to mobile devices (PWA). Created using MERN stack.</p>
-              </div>
-              <div class="project-card">
-                  <h2>HabitTracker <i class="fas fa-calendar-week"></i></h2>
-                  <p>Track your habits, whether good or bad, and see your progress visually using the calendar UI!</p>
-                  <a href="https://github.com/ajay-k/HabitTracker" target="_blank"><i class="fab fa-github"></i></a>
-                  <a href="https://habittrackerchain.herokuapp.com/habits/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-              <div class="project-card">
-                  <h2>ParkAdvisor <i class="fas fa-tree"></i></h2>
-                  <p>Explore US National Parks! Users can add reviews to share and rate their park experiences.</p>
-                  <a href="https://github.com/lauragsack/ParkAdvisor" target="_blank"><i class="fab fa-github"></i></a>
-                  <a href="http://park-advisor.herokuapp.com" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-              <div class="project-card">
-                  <h2>Game-informant <i class="fas fa-gamepad"></i></h2>
-                  <p>Shows relevant information pertaining to a game and allows users to see trending games or search for specific games and add them to their favorites collection.</p>
-                  <a href="https://github.com/jakerjohnson21/game-informant" target="_blank"><i class="fab fa-github"></i></a>
-              </div>
-              <div class="project-card">
-                  <h2>RoommateCalc <i class="fas fa-calculator"></i></h2>
-                  <p>Calculate roommates' monthly rent quickly and send valuable information to roommates on iOS!</p>
-                  <a href="https://github.com/ajay-k/RoommateCalculator" target="_blank"><i class="fab fa-github"></i></a>
-              </div>
-              <div class="project-card">
-                  <h2>Hangman <i class="fas fa-male"></i></h2>
-                  <p>Generates a random word for the user to solve. The user guesses letters to solve the word using the keyboard displayed on screen.</p>
-                  <a href="https://github.com/ajay-k/hangman" target="_blank"><i class="fab fa-github"></i></a>
-                  <a href="https://ajay-k.github.io/hangman/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-              </div>
+    </section>
+
+    <section class="block" id="skills">
+      <div class="wrap">
+        <div class="block-head">
+          <p class="label">Toolkit</p>
+          <h2>Languages and tools I've shipped with.</h2>
+        </div>
+        <dl class="skills">
+          <div class="skill-row">
+            <dt class="label">Languages</dt>
+            <dd><span>Python</span> <span>JavaScript</span> <span>Java</span> <span>C++</span> <span>Swift</span> <span>PHP</span> <span>Prolog</span></dd>
           </div>
+          <div class="skill-row">
+            <dt class="label">Frameworks</dt>
+            <dd><span>React</span> <span>Node.js</span> <span>Express</span> <span>Django</span> <span>Mongoose</span></dd>
+          </div>
+          <div class="skill-row">
+            <dt class="label">Data</dt>
+            <dd><span>PostgreSQL</span> <span>MongoDB</span></dd>
+          </div>
+          <div class="skill-row">
+            <dt class="label">Web</dt>
+            <dd><span>HTML5</span> <span>CSS</span> <span>Progressive web apps</span></dd>
+          </div>
+        </dl>
       </div>
+    </section>
 
-          </div>
-         
-        </div>
-
-        <div class="row ContactMeForm" id="ContactMe">
-          <div class="contact-form container">
-            <h1>Let's Connect!</h1>
-            <form id="contact-form" action="https://formspree.io/xqkyppor" method="POST">
-  
-                <input  class="form-control form-color col-md-6" name="name" type="text" placeholder="Name">
-  
-                <input class="form-control col-md-6" type="text" name="_replyto"  placeholder="Email" required>
-  
-                <textarea class="form-control col-md-6" name="message" placeholder="Message" row="4" required></textarea>
-  
-  
-              <input class="form-control submit" type="submit" value="SEND MESSAGE">
-            </form>
+    <section class="block" id="contact">
+      <div class="wrap contact">
+        <div class="contact-copy">
+          <p class="label">Contact</p>
+          <h2>Let's talk.</h2>
+          <p>If you want to contact me, send a message here.</p>
+          <div class="direct">
+            <a href="https://www.linkedin.com/in/ajay-ku/" target="_blank" rel="noopener">LinkedIn <span class="arrow" aria-hidden="true">↗</span></a>
+            <a href="https://github.com/ajay-k" target="_blank" rel="noopener">GitHub <span class="arrow" aria-hidden="true">↗</span></a>
           </div>
         </div>
-  
-
-        
-
-     
-   
-    
-    
-
-    <footer>
-        
-          <div class="row footer-content">
-              <div class="top-row">
-                  <a href="https://github.com/ajay-k" target="_blank"> Github </a> • <a href="http://linkedin.com/in/ajay-ku/" target="_blank"> LinkedIn </a>
-              </div>
-              <div class="bottom-row">
-                  <p>
-                    Design by Ajay Kumar
-                  </p>
-                  <p>
-                    |
-                  </p>
-                  <p>
-                    Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
-                  </p>
-              </div>
+        <form class="compose" id="contact-form" action="https://formspree.io/f/xqkyppor" method="POST">
+          <div class="field-pair">
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Jordan Lee">
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="jordan@company.com" required>
+            </div>
           </div>
-          
-      
-    </footer> 
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" placeholder="Hi Ajay, I'd love to talk about a role on our team…" required></textarea>
+          </div>
+          <input class="gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="send-row">
+            <p class="status" id="cf-status" role="status"></p>
+            <button class="btn primary" type="submit" id="cf-submit">Send message <span class="arrow" aria-hidden="true">↑</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
 
-
-
+  <footer>
+    <div class="wrap">
+      <span>© <span class="js-year">2026</span> Ajay Kumar</span>
+      <span><a href="https://github.com/ajay-k" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/ajay-ku/" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
+  </footer>
 </body>
 </html>
